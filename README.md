@@ -78,16 +78,21 @@ REST API for customer, product, and order management built with Java and Spring 
 ``sql
 CREATE DATABASE order_management;
 
+
 ### 2. Configure application.properties with your database credentials
+
 
 ### 3. Run the application:
    mvn spring-boot:run
 
+
 ### 4. API base URL:
 http://localhost:8080
 
+
 ## Running Tests
 mvn test
+
 
 
 ### Sample JSON Requests
@@ -99,7 +104,9 @@ mvn test
 "phone": "600123123"
 }
 
+
 ## Create product
+
 {
 "name": "Mechanical Keyboard",
 "description": "RGB keyboard",
@@ -108,26 +115,31 @@ mvn test
 "active": true
 }
 
+
 ## Create order
+
 {
 "customerId": 1
 }
 
+
 ## Add item to order
+
 {
 "productId": 1,
 "quantity": 2
 }
 
+
 ## Testing
+
 The project includes:
 - unit tests for services
 - controller test for product endpoint
 - business rule validation tests
 
+
+
 ## Author
 
 Daniel
-
-
-
